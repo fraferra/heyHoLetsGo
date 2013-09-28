@@ -8,48 +8,45 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:text="What are you going to do?" 
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
     <EditText
         android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignParentTop="true"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
         android:layout_below="@+id/editText1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="74dp"
         android:ems="10"
-        android:inputType="textPassword" >
+        android:inputType="number" >
 
         <requestFocus />
     </EditText>
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp"
-        android:gravity="center_vertical|center_horizontal|fill_horizontal"
-        android:text="Login In!"
-        android:textAppearance="?android:attr/textAppearanceMediumInverse"
-        android:textColorHint="@android:color/hint_foreground_holo_light" />
-
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button1"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="50dp"
-        android:text="Not Registered? Sign Up!"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="34dp"
+        android:text="When will you do it?"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
